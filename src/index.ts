@@ -1,5 +1,5 @@
-const papa = { name: 'meniac', age: 21 };
+import User from './user';
 
-papa.name = 'pupu';
+const user = new User();
 
-console.log(papa);
+console.log(user);
