@@ -1,3 +1,7 @@
+interface mappable {
+  location: mapboxgl.LngLatLike;
+}
+
 class CustomMap {
   private mapBox: mapboxgl.Map;
   private marker: mapboxgl.Marker;
@@ -13,9 +17,9 @@ class CustomMap {
     });
   }
 
-  setMarker(lngLat: mapboxgl.LngLatLike): void {
+  addMarker(mappable: mappable): void {
     this.marker = new mapboxgl.Marker();
-    this.marker.setLngLat(lngLat);
+    this.marker.setLngLat(mappable.location);
     this.marker.addTo(this.mapBox);
   }
 }
