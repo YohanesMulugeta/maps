@@ -10,7 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
-    "parcel": "^2.8.3"
+    "@parcel/transformer-typescript-tsc": "^2.8.3",
+    "parcel": "^2.8.3",
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "@types/mapbox-gl": "^2.7.10"
